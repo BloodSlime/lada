@@ -1,0 +1,36 @@
+footer {
+    background: #E9E9E9;
+}
+
+footer > .container {
+    flex-direction: column;
+}
+
+footer >.container> p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #B3B3B3;
+    margin-top: 30px;
+}
+
+.footer__politics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__politics > p > a {
+    color: #B3B3B3;
+    text-decoration: none;
+}
+
+@media (min-width:320px  ) and (max-width: 1199px) {
+    .footer__politics {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .footer__politics > p {
+        margin-bottom: 10px;
+    }
+}

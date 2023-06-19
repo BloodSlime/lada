@@ -1,0 +1,122 @@
+.complect > .container {
+    flex-direction: column;
+}
+
+.complect__filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.complect-filter__dropdowns {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.complect-filter__dropdowns > .dropdown {
+    width: 100% !important;
+}
+
+.complect-filter__dropdowns > .dropdown:first-child {
+    margin-left: 0 !important;
+}
+
+.complect__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 20px
+}
+
+.complect__item {
+    padding: 40px;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+}
+
+.complect-item__header {
+    margin-top: 20px;
+}
+
+.complect__item > img {
+    width: 80%;
+}
+
+.complect-item__benefit {
+    font-size: 20px;
+    line-height: 24px;
+    color: #E46939;
+    margin-top: 20px;
+}
+
+.complect-item__credit {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+.complect-item__features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.complect-item__feature > img {
+    max-width: 24px
+}
+
+
+.complect-item__features > span {
+    width: 34%;
+    height: 1px;
+    background-color: #E9E9E9;
+}
+
+.compplect-item__btn {
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+.complect__show {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: underline;
+    color: #E46939;
+    text-align: center;
+}
+
+@media (min-width:320px  ) and (max-width: 1199px) {
+    .complect__wrapper {
+        margin-top: 40px;
+    }
+    .complect__filter {
+        flex-direction: column;
+    }
+    .complect-filter__dropdowns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .complect-filter__dropdowns>.dropdown {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .complect-filter__dropdowns>.dropdown>button {
+        width: 100%;
+    }
+    .complect__item {
+        padding: 20px;
+    }
+    .complect-item__benefit {
+        margin-top: 40px;
+        width:60%;
+    }
+
+    .complect-item__features > span {
+        display: none;
+    }
+    .complect__show {
+        display: none;
+    }
+}

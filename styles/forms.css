@@ -1,0 +1,87 @@
+.forms {
+    margin-top: 105px;
+}
+
+.forms__trade-in {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.forms-trade-in__item {
+    display: flex;
+    width: calc(50% - 20px);
+    padding: 40px;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+}
+
+.forms-trade-in-item__descr {
+    margin-left: 20px;
+}
+
+.forms-trade-in-item__descr > h3 {
+    height: 62px
+}
+
+.forms-trade-in-item__descr > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4E5256;
+    margin-top: 20px;
+    height: 66px;
+}
+
+.form-control {
+    height: 59px !important;
+    margin-top: 20px;
+    background-color: #F9F9F9 !important;
+}
+
+.form-control:last-child {
+    margin-top: 10px;
+}
+
+.forms-trade-in__btn {
+    width: 100% !important;
+    margin-top: 10px;
+    height: 62px !important;
+}
+
+@media (min-width:320px  ) and (max-width: 1199px) {
+    .forms__trade-in {
+        flex-direction: column;
+    }
+    .forms-trade-in__item {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .forms-trade-in__item:nth-child(2n)>.forms-trade-in-item__descr > h3 {
+        height: fit-content;
+    }
+
+    .forms-trade-in__item > img{
+        height: 180px;
+        content: url('../assets/trade-in_mobile.png')
+    }
+    .forms-trade-in__item:last-child > img {
+        content: url('../assets/credit_mobile.png')
+    }
+    .forms-trade-in-item__descr {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .forms-trade-in-item__descr > h3 > br {
+        display: none;
+    }
+    .forms-trade-in-item__descr > p {
+        margin-bottom: 0;
+        height: fit-content
+    }
+    .forms-trade-in-item-descr__inputs {
+        margin-top: 16px;
+    }
+}

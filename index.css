@@ -1,0 +1,75 @@
+body {
+    overflow-x: hidden;
+}
+
+.dropdown > button {
+    background: #F9F9F9;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    color: #292D32;
+}
+
+.dropdown > button:hover {
+    background: #F9F9F9;
+    color: #292D32;
+}
+.dropdown > button:focus {
+    background: #F9F9F9;
+    color: #292D32;
+}
+
+.dropdown > button:active {
+    background: #F9F9F9;
+    color: #292D32;
+}
+
+.container {
+    display:flex;
+    width: calc(100vw - 200px) !important;
+    padding-bottom: 0;
+    padding: 0 !important;
+}
+
+.btn-primary{
+    width: 227px !important;
+    height: 54px !important;
+    background-color: #E46939 !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #E46939 !important;
+}
+
+.btn-primary > button:focus{
+    background-color: #E46939 !important;
+}
+
+
+.btn-primary > button:active {
+    background-color: #E46939 !important;
+}
+
+@media (min-width:320px  ) and (max-width: 1199px) {
+    .container {
+        min-width: 280px;
+        height: 100%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer__politics {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .footer__politics > p {
+        margin-bottom: 10px;
+    }
+}
